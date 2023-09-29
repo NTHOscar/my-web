@@ -15,8 +15,8 @@ export const NavBar = () => {
     e.name = e.name === 'menu' ? 'close' : 'menu'
     if(navLinks !== null){
       navLinks.classList.toggle('top-[42px]'); // == h-12 (the horizontal navbar)
-      navLinks.classList.toggle('bg-cyan-100');
-      navLinks.classList.toggle('dark:bg-gray-700');
+      // navLinks.classList.toggle('md:bg-cyan-100');
+      // navLinks.classList.toggle('md:dark:bg-gray-700');
       navLinks.classList.toggle('py-3');
     }
   }
@@ -27,7 +27,7 @@ export const NavBar = () => {
             {/* <img className="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="..."></img> */}
             NTHOscar
         </div>
-        <div className="nav-links duration-500 md:static absolute md:min-h-fit  left-0 top-[-100%] md:w-auto  w-full px-5 ">
+        <div className="nav-links duration-500 md:static absolute md:min-h-fit  left-0 top-[-100%] md:w-auto  w-full px-5 max-md:bg-cyan-100 dark:max-md:bg-gray-700">
             <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li>
                     <a className="hover:text-gray-500" href="">Home</a>
