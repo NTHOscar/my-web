@@ -1,8 +1,7 @@
 "use client"
-import Image from 'next/image'
-// import {NavBar} from "/components/NavBar"
-import Link from 'next/link';
-import React, { useEffect } from "react";
+
+import { ThemeButton } from "/components/ThemeButton";
+import { useEffect } from "react";
 
 export default function Home() {
   let navLinks = null;
@@ -13,7 +12,7 @@ export default function Home() {
 
   function onToggleMenu(e){
     
-    console.log(e);
+    // console.log(e);
     e.name = e.name === 'menu' ? 'close' : 'menu'
     navLinks.classList.toggle('top-[10%]')
   }
@@ -21,12 +20,12 @@ export default function Home() {
   return (
     <>
       {/* navbar */}
-      <nav className=" bg-cyan-400 flex justify-between items-center px-5  mx-auto h-100">
+      <nav className=" bg-cyan-400 dark:bg-gray-500 flex justify-between items-center px-5  mx-auto h-12 ">
             <div className="">
                 {/* <img className="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="..."></img> */}
-                Oscar
+                NTHOscar
             </div>
-            <div className="nav-links duration-500 md:static absolute  bg-green-400 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full px-5 ">
+            <div className="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full px-5 ">
                 <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
                         <a className="hover:text-gray-500" href="">Home</a>
@@ -42,6 +41,11 @@ export default function Home() {
                     </li>
                     <li>
                         <a className="hover:text-gray-500" href="#">Contact</a>
+                    </li>
+                    <li>
+                      {/* <Switch /> */}
+                      <ThemeButton/>
+
                     </li>
                 </ul>
             </div>
