@@ -22,7 +22,7 @@ export const NavBar = () => {
   }
 
   return (
-    <div className="sticky top-0">
+    <div className="sticky top-0 z-10">
       <nav className=" bg-cyan-400 dark:bg-gray-900 flex justify-between items-center px-5  mx-auto h-12">
           <div className="">
               {/* <img className="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="..."></img> */}
@@ -37,10 +37,13 @@ export const NavBar = () => {
                       <a className="hover:text-gray-500" href="#about">About</a>
                   </li>
                   <li>
-                      <a className="hover:text-gray-500" href="#">Skills</a>
+                      <a className="hover:text-gray-500" href="#experience">Experience</a>
                   </li>
                   <li>
-                      <a className="hover:text-gray-500" href="#">Experience</a>
+                      <a className="hover:text-gray-500" href="#education">Education</a>
+                  </li>
+                  <li>
+                      <a className="hover:text-gray-500" href="#">Skills</a>
                   </li>
                   <li>
                       <a className="hover:text-gray-500" href="#">Contact</a>

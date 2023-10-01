@@ -2,7 +2,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export const Introduction = () => {
     return(
-        <div className=" py-32 ">
+        <div className=" my-32 ">
             <h1 className="text-4xl font-bold">Hi, I am Oscar</h1>
             <p className="text-base mt-4">I am currently a final-year Computer Science student at The Chinese University of Hong Kong, passionate about exploring the world of technology and its endless possibilities.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium pt-5">

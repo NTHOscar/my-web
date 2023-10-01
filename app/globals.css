@@ -5,3 +5,8 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.vertical-timeline {
+    --line-color: #AAAAAA;
+  }
+
+
